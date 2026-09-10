@@ -20,6 +20,18 @@ module.exports = {
       },
       extend: {
         colors: {
+          webtoon: {
+            DEFAULT: '#00d564',
+            dark: '#00b552',
+            light: '#5cf0a0',
+          },
+          sunny: {
+            DEFAULT: '#ffb020',
+            light: '#ffd166',
+          },
+          coral: {
+            DEFAULT: '#ff6b6b',
+          },
           border: 'hsl(var(--border))',
           input: 'hsl(var(--input))',
           ring: 'hsl(var(--ring))',
@@ -92,11 +104,26 @@ module.exports = {
             to: {
               height: '0'
             }
+          },
+          'float-y': {
+            '0%, 100%': { transform: 'translateY(0)' },
+            '50%': { transform: 'translateY(-14px)' }
+          },
+          'wiggle': {
+            '0%, 100%': { transform: 'rotate(-6deg)' },
+            '50%': { transform: 'rotate(6deg)' }
+          },
+          'sparkle': {
+            '0%, 100%': { opacity: '0.3', transform: 'scale(0.8)' },
+            '50%': { opacity: '1', transform: 'scale(1.15)' }
           }
         },
         animation: {
           'accordion-down': 'accordion-down 0.2s ease-out',
-          'accordion-up': 'accordion-up 0.2s ease-out'
+          'accordion-up': 'accordion-up 0.2s ease-out',
+          'float-y': 'float-y 4s ease-in-out infinite',
+          'wiggle': 'wiggle 2.5s ease-in-out infinite',
+          'sparkle': 'sparkle 2s ease-in-out infinite'
         }
       }
     },

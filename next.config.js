@@ -1,5 +1,6 @@
 const nextConfig = {
   output: 'standalone',
+  reactStrictMode: false,
   allowedDevOrigins: [
     'indie-comic-vault.cluster-12.preview.emergentcf.cloud',
     'indie-comic-vault.preview.emergentagent.com',

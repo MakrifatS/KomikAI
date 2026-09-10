@@ -216,6 +216,9 @@ frontend:
         -working: "NA"
         -agent: "main"
         -comment: "Client SPA with mounted-gate to avoid hydration mismatch from injected input attrs in preview. Server logs confirm full journey works (login, role, creator, detail, chapters, comments all 200). Awaiting user permission before frontend automated testing."
+        -working: true
+        -agent: "main"
+        -comment: "Enhancements added: (1) i18n EN/ID with auto-detect by timezone/navigator.language + manual Globe toggle in navbar; (2) Webtoon-style theme = brand green (#00d564) primary with warm cheerful accents (sunny amber #ffb020, coral #ff6b6b) via tailwind config; (3) cute chibi anime-girl SVG mascot (MascotGirl) with float/wiggle/sparkle animations placed in front of the homepage banner. Verified via screenshots: theme, i18n (EN auto-detected), and mascot all render correctly. Server logs confirm /api/auth/me and /api/comics return 200 to the browser (effects fire, data flows). reactStrictMode disabled and allowedDevOrigins set for preview host."
 
 metadata:
   created_by: "main_agent"
